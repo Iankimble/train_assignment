@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAKXerZg_zc6B8XltNl0idimuQ_cqDIMWY",
+    authDomain: "ian-kimble-train-project.firebaseapp.com",
+    databaseURL: "https://ian-kimble-train-project.firebaseio.com",
+    projectId: "ian-kimble-train-project",
+    storageBucket: "ian-kimble-train-project.appspot.com",
+    messagingSenderId: "798524304933"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Ian's Train Station</h1>
+   
+    </div>
+  </div>
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Train Name</th>
+        <th scope="col">Destination</th>
+        <th scope="col">Frequency (Mins)</th>
+        <th scope="col">Next Arrival</th>
+        <th scope="col">Minutes Away</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td> Train Sixers</td>
+        <td> South Philadelphia</td>
+        <td> 3:00</td>
+        <td> 30</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Train Eagles</td>
+        <td>North Philadelphia</td>
+        <td>4:00</td>
+        <td> 90</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td> Train Flyers</td>
+        <td> South West Philadelphia</td>
+        <td> 5:00</td>
+        <td> 120</Td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td> Train Phillies</td>
+        <td> Center City</td>
+        <td> 6:00</td>
+        <td> 180</td>
+      </tr>
+    </tbody>
+  </table>
+ 
+  <form>
+    <div class="form-group">
+      <label for="formGroupExampleInput"> Train</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2"> Destination</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2"> First Train Time (HH:MM)</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2"> Frequency</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+ 
+    <script type="text/javascript" src="script.js"></script>
+    <body>
+    
+</body>
+</html>
